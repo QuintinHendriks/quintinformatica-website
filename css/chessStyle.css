@@ -1,0 +1,121 @@
+body{
+    background: url("../imgs/sayagata-400px.png");
+}
+
+#board {
+    background: papayawhip;
+    margin: 0 auto;
+    width: 480px;
+    padding-bottom: 480px;
+    border: 3px solid grey;
+    box-shadow: 5px 5px 10px black;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 13px;
+}
+
+#button-wrap{
+text-align: center;
+margin: 0 auto;
+margin-top: 10px;
+}
+
+.row {
+    width: 480px;
+}
+
+.field {
+    width: 60px;
+    float: left;
+}
+
+.fieldb {
+    background: darkred;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.fieldw {
+    background: papayawhip;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;;
+}
+
+.empty {
+    padding-top: 60px;
+}
+
+@media (max-width: 500px) {
+    #board {
+        margin-right: 5px;
+        width: 95.5vw;
+        padding-bottom: 95.5vw;
+        border: 3px solid grey;
+    }
+    .row {
+        width: 95.5vw;
+    }
+    .empty {
+        padding-top: 11.9375vw;
+    }
+    .field {
+        display: inline-block;
+        height: 11.9375vw;
+        width: 11.9375vw;
+        float: left;
+    }
+}
+
+.path{
+    box-shadow: 0 0 0 5px black inset;
+}
+
+.pionw {
+    content: url('https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png');
+}
+
+.towerw {
+    content: url("https://upload.wikimedia.org/wikipedia/commons/5/5c/Chess_rlt60.png");
+}
+
+.horsew {
+    content: url("https://upload.wikimedia.org/wikipedia/commons/2/28/Chess_nlt60.png");
+}
+
+.bishopw {
+    content: url("https://upload.wikimedia.org/wikipedia/commons/9/9b/Chess_blt60.png");
+}
+
+.queenw {
+    content: url("https://upload.wikimedia.org/wikipedia/commons/3/3b/Chess_klt60.png");
+}
+
+.kingw {
+    content: url("https://upload.wikimedia.org/wikipedia/commons/4/49/Chess_qlt60.png");
+}
+
+.pionb {
+    content: url("https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png");
+}
+
+.towerb {
+    content: url("https://upload.wikimedia.org/wikipedia/commons/a/a0/Chess_rdt60.png");
+}
+
+.horseb {
+    content: url("https://upload.wikimedia.org/wikipedia/commons/f/f1/Chess_ndt60.png");
+}
+
+.bishopb {
+    content: url("https://upload.wikimedia.org/wikipedia/commons/8/81/Chess_bdt60.png");
+}
+
+.queenb {
+    content: url("https://upload.wikimedia.org/wikipedia/commons/e/e3/Chess_kdt60.png");
+}
+
+.kingb {
+    content: url("https://upload.wikimedia.org/wikipedia/commons/a/af/Chess_qdt60.png");
+}

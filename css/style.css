@@ -1,0 +1,355 @@
+::-webkit-scrollbar {
+    display: none;
+}
+body {} .container {
+    max-height: 600px;
+    min-height: 600px;
+    margin: 0 auto;
+}
+.parallax {
+    max-width: 100vw;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#game-of-life {
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: -1;
+}
+#page {
+    -moz-opacity: 1;
+    filter: alpha(opacity=1);
+    opacity: 1;
+}
+#title-box {
+    text-align: center;
+}
+#wrapper {
+    margin: 0 auto;
+}
+#field {
+    margin: 0 auto;
+}
+.row {
+    float: left;
+}
+.cell {
+    font-size: 16px;
+    width: 18px;
+    background: grey;
+    float: left;
+    border-style: solid;
+    border-width: 1px 1px 0px 0px;
+}
+#controls {
+    margin: 0 auto;
+}
+#generation {
+    float: right;
+}
+small {
+    text-align: center;
+}
+#generation {
+    float: right;
+}
+@media (max-width: 775px) {
+    hr {
+        width: 90% !important;
+        height: 3px;
+        box-shadow: 1px 1px 8px black;
+    }
+    h2#subtitle {
+        font-family: 'Raleway', sans-serif;
+        color: #5c5c3d;
+        font-size: 24px !important;
+        text-shadow: 3px 3px 10px white;
+    }
+    p.standard-title {
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        font-size: 45px !important;
+        text-shadow: 1px 1px 20px black;
+        margin-top: 30px !important;
+        padding-right: 10vw !important;
+        padding-left: 15vw !important;
+    }
+    h2.text {
+        font-family: 'Raleway', sans-serif;
+        color: #000;
+        font-size: 19px !important;
+        text-shadow: 1px 1px 20px white;
+        margin-top: 25px !important;
+        padding-right: 5vw !important;
+        padding-left: 10vw !important;
+    }
+    p.title {
+        font-family: 'Raleway', sans-serif;
+        color: #ffffff;
+        font-size: 52px !important;
+        text-shadow: 1px 1px 20px black;
+        margin-top: 80px !important;
+    }
+    section#about {
+        background: url("../imgs/background-2(mountains).jpg") 50% 0 fixed;
+        min-height: 600px !important;
+    }
+    .container-fluid#portfolio {
+        max-width: 100%;
+        min-height: 0px;
+        max-height: 70000px !important;
+        margin: 0 auto;
+    }
+    td.site {
+        border: 0px;
+        padding: 16px 8px !important;
+        display: block;
+        margin: 0 auto !important;
+    }
+    .spacer {
+        height: 0px !important;
+        visibility: hidden !important;
+    }
+    #sites {
+        overflow-y: auto;
+        overflow-x: scroll;
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    #scroll-left,
+    #scroll-right {
+        visibility: hidden;
+        height: 0px !important;
+        width: 0px !important;
+    }
+    .btn-media {
+        margin-left: 10vw !important;
+        width: 200px !important;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px !important;
+        text-align: left;
+    }
+    section#contact {
+        background: url("../imgs/background-3(sunset).jpg") 10% 0 fixed;
+        min-height: 70vh !important;
+        font-family: "Raleway", sans-serif;
+        overflow-y: visible;
+    }
+}
+.topnav {
+    font-family: "Raleway";
+    border-bottom: 3px outset rgba(192, 192, 192, 0.5);
+    font-size: 18px;
+    box-shadow: 0px 1px rgba(0, 0, 0, 0.3);
+}
+.topnav ul.navbar-nav li a:hover,
+.topnav ul.navbar-nav li a:focus {
+    background: rgba(192, 192, 192, 0.5);
+    color: #000;
+}
+.title {
+    background: url("../imgs/background-1(lake).jpg") 50% 0 fixed;
+}
+p.title {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+    text-shadow: 1px 1px 20px black;
+    margin-top: 150px;
+}
+h2#subtitle {
+    font-family: 'Raleway', sans-serif;
+    color: #5c5c3d;
+    font-size: 30px;
+    text-shadow: 3px 3px 10px white;
+}
+hr {
+    width: 60%;
+    height: 3px;
+    box-shadow: 1px 1px 8px black;
+}
+#container-1 {
+    max-width: 100%;
+    height: 10px;
+    min-height: 0px;
+    margin: 0 auto;
+    background: #e6f9ff;
+    width: 100vw;
+    box-shadow: 8px 4px 4px 2px black;
+}
+section#about {
+    background: url("../imgs/background-2(mountains).jpg") 50% 0 fixed;
+    min-height: 110vh;
+}
+p.standard-title {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 1px 1px 20px black;
+    margin-top: 50px;
+    padding-right: 40vw;
+    padding-left: 25vw;
+}
+h2.text {
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+    font-size: 25px;
+    text-shadow: 1px 1px 20px white;
+    margin-top: 50px;
+    padding-right: 20vw;
+    padding-left: 25vw;
+}
+.container-fluid#portfolio {
+    max-width: 100%;
+    max-height: 800px;
+    min-height: 0px;
+    margin: 0 auto;
+}
+table {
+    margin: 0 auto;
+}
+#portfolio a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+.site-title {
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 22px;
+}
+.title-wrapper {
+    margin-top: 4px;
+    height: 45px;
+    text-align: center;
+    background-color: lightgrey;
+    border-radius: 0px 0px 7px 7px;
+    transition: background .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out;
+    -webkit-transition: background .5s ease-in-out;
+}
+.title-wrapper:hover,
+.title-wrapper:focus {
+    background-color: white;
+}
+site.wrapper {
+    margin: 0 auto;
+}
+.site-wrapper:hover .title-wrapper {
+    background-color: white;
+}
+td.site img {
+    margin: 0 auto;
+    height: 256px;
+    width: 256px;
+}
+td.site {
+    border: 0px;
+    padding: 16px 8px 16px 8px;
+    margin-top: 200px;
+}
+#sites {
+    margin: 0px 100px;
+    overflow-y: auto;
+    overflow-x: scroll;
+}
+#scroll-left,
+#scroll-right {
+    z-index: 0;
+    position: absolute;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    height: 305px;
+    width: 140px;
+    transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+}
+#scroll-left {
+    border-left: 4px solid grey;
+    left: 112px;
+}
+#scroll-right {
+    border-right: 4px solid grey;
+    right: 112px;
+    margin-top: -320px;
+}
+#scroll-left:hover,
+#scroll-left:focus,
+#scroll-right:hover,
+#scroll-right:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.spacer {
+    height: 120px;
+}
+section#contact {
+    background: url("../imgs/background-3(sunset).jpg") 10% 0 fixed;
+    height: 80vh;
+    font-family: "Raleway", sans-serif;
+}
+.btn-media {
+    margin-top: 4px;
+    margin-right: 20vw;
+    margin-left: 25vw;
+    width: 250px;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+}
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #2098d1;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+    right: 0;
+}
+#underline {
+    max-width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    font-family: "Raleway", sans-serif;
+    background-color: #4d4d4d;
+}
+h5 {
+    margin-top: 20px;
+    margin-left: 5px;
+    color: #fff;
+}
